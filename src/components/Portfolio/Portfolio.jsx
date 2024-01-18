@@ -2,6 +2,12 @@ import React from 'react'
 import css from './Portfolio.module.scss'
 import { fadeIn, staggerChildren } from '../../utils/motion'
 import { motion } from 'framer-motion'
+import show from "../../../public/Tips.png";
+import Case from "../../../public/Case.png";
+import showCase from "../../../public/showCase.png"
+import PHP from '../../../public/PHP.png'
+import todo from '../../../public/TO-DO.png'
+import windbnb from '../../../public/Windbnd.png'
 const Portfolio = () => {
   return (
    <motion.section 
@@ -29,13 +35,26 @@ const Portfolio = () => {
         <div className={`flexCenter ${css.showCase}`}>
             <motion.img 
             variants={fadeIn("up", "tween", 0.5, 0.6)}
-            src="../../../public/show.png" alt="project" />
+            src={show} alt="project" />
             <motion.img 
             variants={fadeIn("up", "tween", 0.7, 0.6)}
-            src="../../../public/Case.png" alt="project" />
+            src={Case} alt="project" />
             <motion.img 
             variants={fadeIn("up", "tween", 0.9, 0.6)}
-            src="../../../public/showCase.png" alt="project" />
+            src={showCase} alt="project" />
+            
+        </div>
+        <div className={`flexCenter ${css.showCase}`}>
+            <motion.img 
+            variants={fadeIn("up", "tween", 0.5, 0.6)}
+            src={PHP} alt="project" />
+            <motion.img 
+            variants={fadeIn("up", "tween", 0.7, 0.6)}
+            src={todo} alt="project" />
+            {/* <motion.img 
+            variants={fadeIn("up", "tween", 0.9, 0.6)}
+            src={windbnb} alt="project" /> */}
+            
         </div>
     </div>
    </motion.section>
