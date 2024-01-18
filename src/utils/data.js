@@ -90,10 +90,14 @@ export const comments = [
     img: "./Dev3.png"
   },
   
-  
-  
-  
 ];
+
+export const profile = [
+  {
+    name: "{NanoDev}",
+    img: "./Person1.png",
+  }
+]
 
 export const sliderSettings = {
   dots: true,

@@ -29,7 +29,7 @@ const Header = () => {
      style={{boxShadow: headershadow}}>
    
       <div className={`flexCenter innerWidth ${css.container}`}>
-        <div className={css.name}>NanoDev</div>
+        <div className={css.name}>{"{ NanoDev }"}</div>
 
         <ul 
         ref={menuRef}
